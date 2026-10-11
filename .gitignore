@@ -1,0 +1,8 @@
+/target
+**/target
+*.o
+*.elf
+*.bin
+build/
+.vscode/
+.idea/
