@@ -1,6 +1,6 @@
 [package]
 edition      = "2024"
-name         = "blinkingPool"
+name         = "blinking_pool"
 rust-version = "1.95"
 version      = "0.1.0"
 
@@ -17,7 +17,6 @@ esp-rtos = { version = "0.4.0", features = [
   "esp32",
   "log-04",
 ] }
-
 esp-bootloader-esp-idf = { version = "0.6.0", features = ["esp32", "log-04"] }
 log                    = "0.4.27"
 
@@ -33,6 +32,7 @@ esp-println = { version = "0.18.0", features = ["esp32", "log-04"] }
 
 critical-section = "1.2.0"
 static_cell      = "2.1.1"
+embassy-sync = "0.7"
 
 
 # For fine tuning these settings, please refer to https://doc.rust-lang.org/cargo/reference/profiles.html
