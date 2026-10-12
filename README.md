@@ -34,7 +34,6 @@ Cerrar sesion y volver a entrar para que el cambio tenga efecto.
 ## Creacion del proyecto
 
     esp-generate -o esp32 -o esp32-wroom-32 -o embassy -o unstable-hal -o alloc -o log -o esp-backtrace basics
-    cd basics
 
 Las opciones indican:
 - esp32: chip ESP32 original (arquitectura Xtensa)
