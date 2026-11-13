@@ -1,0 +1,20 @@
+[package]
+name = "lm393"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "lm393"
+path = "src/bin/main.rs"
+
+[dependencies]
+esp-hal = { version = "1.2.2", features = ["esp32", "unstable"] }
+esp-rtos = { version = "0.4", features = ["esp32", "embassy"] }
+embassy-executor = { version = "0.10" }
+embassy-time = { version = "0.5" }
+esp-backtrace = { version = "0.20", features = ["esp32", "panic-handler", "println"] }
+esp-println = { version = "0.18", features = ["esp32"] }
+esp-bootloader-esp-idf = { version = "0.2", features = ["esp32"] }
+
+[profile.release]
+opt-level = "s"

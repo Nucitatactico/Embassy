@@ -3,6 +3,7 @@
 *.o
 *.elf
 *.bin
+*.lock
 build/
 .vscode/
 .idea/
